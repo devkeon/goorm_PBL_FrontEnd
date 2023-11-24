@@ -1,0 +1,69 @@
+:root {
+    --bordercolor: rgb(174, 174, 174);
+    --fontcolor: rgb(121, 119, 119);
+}
+
+#export {
+    display: flex;
+    margin: 1vh 0 1vh 0;
+    border: none;
+    background-color: green;
+    color: white;
+    height: 4vh;
+    width: 20vw;
+    font-size: 2vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#export:active {
+    background-color: rgb(1, 76, 1);
+}
+
+.cell-container {
+    display: table;
+    border-top: 1px solid var(--bordercolor);
+    border-left: 1px solid var(--bordercolor);
+    border-collapse: collapse;
+    width: 100%;
+    height: 50vh;
+}
+
+.col-index {
+    display: table-row;
+}
+
+.index {
+    color: var(--fontcolor);
+    display: table-cell;
+    width: 3vw;
+    text-align: center;
+    background-color: lightgray;
+    border-right: 1px solid var(--bordercolor);
+    border-bottom: 1px solid var(--bordercolor);
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    border-right: 1px solid var(--bordercolor);
+    border-bottom: 1px solid var(--bordercolor);
+}
+
+.cell-write {
+    display: flex;
+    text-align: center;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    padding: 0;
+}
+
+.selected {
+    background-color: skyblue;
+    color: white;
+}
