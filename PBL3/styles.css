@@ -1,0 +1,214 @@
+:root {
+    --maincolor: rgb(76, 113, 234);
+    --tabcolor: rgb(26, 175, 26);
+    --infocolor:rgb(156, 153, 153);
+    --bordercolor: lightgrey;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--maincolor);
+    height: 5vh;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    width: 20vw;
+    padding-left: 1vw;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 84vh;
+}
+
+/* 서칭 박스 */
+
+.searching-box {
+    margin: 2vh 1vw 0 1vw;
+    height: 18vh;
+    border: 1px solid var(--bordercolor);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.searching-box-name {
+    height: 6vh;
+    font-size: 4vh;
+    font-weight: 900;
+    margin-left: 2vw;
+}
+
+.searching-box-intro {
+    color: gray;
+    font-size: 2vh;
+    height: 2vh;
+    margin-left: 2vw;
+}
+
+#search-bar {
+    margin-left: 2vw;
+    margin-top: 2vh;
+    margin-right: 2vw;
+    border: 1px solid var(--bordercolor);
+    border-radius: 3px;
+    height: 3vh;
+}
+
+
+/* 프로필 */
+.profile {
+    margin: 2vh 1vw 0 1vw;
+    border: 1px solid var(--bordercolor);
+    border-radius: 3px;
+    height: 26vh;
+    display: flex;
+    align-items:center;
+}
+
+.profile-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 26vh;
+    margin: 0 1vh 0 1vh;
+}
+
+#profile-pict {
+    height: 18vh;
+}
+
+#profile-link {
+    border: transparent;
+    border-radius: 10px;
+    background-color: var(--maincolor);
+    color: white;
+    height: 3vh;
+}
+
+.profile-infos {
+    height: 26vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 0 0 1vw;
+}
+
+.profile-info-short {
+    width: 70vw;
+}
+
+.profile-info-short > span {
+    padding: 3px 3px 3px 3px;
+    font-size: 1.4vh;
+    color: white;
+    font-size: 1vh;
+}
+
+.public-repos {
+    background-color: var(--maincolor);
+    border-radius: 3px;
+}
+
+.public-gists {
+    background-color: var(--infocolor);
+    border-radius: 3px;
+}
+
+.followers {
+    background-color: var(--tabcolor);
+    border-radius: 3px;
+}
+
+.following {
+    background-color: rgb(51, 17, 164);
+    border-radius: 3px;
+}
+
+table {
+    border: 1px solid var(--bordercolor);
+    border-collapse: collapse;
+    height: 18vh;
+    border-radius: 5px;
+}
+td {
+    border: 1px solid var(--bordercolor);
+    font-size: 1vh;
+    padding: 10px; 
+}
+
+/* Latest repos*/
+
+.latest-repos {
+    margin: 2vh 1vw 0 1vw;
+    height: 32vh;
+}
+
+.latest-repos-name {
+    font-size: 2.5vh;
+    font-weight: 700;
+}
+
+.latest-repo-box {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.latest-repo {
+    border: 1px solid var(--bordercolor);
+    border-radius: 3px;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    padding: 0.7vh 2vw 0.7vh 2vw;
+    margin: 0.5vh 0 0.5vh 0;
+    justify-content: space-between;
+}
+
+.latest-repo-name {
+    font-size: 1.5vh;
+    color: var(--maincolor);
+}
+
+.latest-repo-info > span {
+    margin: 0 2px 0 2px; 
+    font-size: 1vh;
+    padding: 5px;
+    color: white;
+    border-radius: 3px;
+}
+
+.stars {
+    background-color: var(--maincolor);
+}
+
+.watchers {
+    background-color: var(--infocolor);
+}
+
+.forks {
+    background-color: var(--tabcolor);
+}
+
+.foot {
+    background-color: lightgray;
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vh;
+    position: absolute;  
+    bottom: 0;
+}

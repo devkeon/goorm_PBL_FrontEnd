@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="./dist/main.js"></script>
+    <title>GitHubFinder</title>
+</head>
+
+<body>
+    <header>
+        <div class="title">GitHub Finder</div>
+    </header>
+    <main>
+        <div class="searching-box">
+            <div class="searching-box-name">Search GitHub Users</div>
+            <div class="searching-box-intro">Enter a username to fetch a user profile and repos</div>
+            <input type="txt" id="search-bar" value="devkeon">
+        </div>
+        <div class="profile">
+            <div class="profile-main">
+                <img id="profile-pict" src="tmp.png">
+                <button type="button" id="profile-link" onclick="">View Profile</button>
+            </div>
+            <div class="profile-infos">
+                <div class="profile-info-short">
+                    <span class="public-repos">Public Repos: 53</span>
+                    <span class="public-gists">Public Gists: 0</span>
+                    <span class="followers">Followers: 1174</span>
+                    <span class="following">Following: 0</span>
+                </div>
+                <table class="profile-info-detail">
+                    <tr>
+                        <td class="company">Company: NULL</td>
+                    </tr>
+                    <tr>
+                        <td class="website"> Website/Blog: dd</td>
+                    </tr>
+                    <tr>
+                        <td class="location">Korea</td>
+                    </tr>
+                    <tr>
+                        <td class="member-since">Member Since: 123123</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="latest-repos">
+            <div class="latest-repos-name">
+                Latest Repos
+            </div>
+            <div class="latest-repo-box">
+                <!-- <div class="latest-repo">
+                    <span class="latest-repo-name">react-ddd-ddd</span>
+                    <span class="latest-repo-info">
+                        <span class="stars">Stars: 1</span>
+                        <span class="watchers">Watchers: 1</span>
+                        <span class="forks">forks: undefined</span>
+                    </span>
+                </div> -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+            GitHub Finder
+        </div>
+    </footer>
+</body>
+</html>
